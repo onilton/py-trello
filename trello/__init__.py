@@ -518,17 +518,33 @@ class Card(object):
     def member_ids(self):
         return self.idMembers
 
+    @member_ids.setter
+    def member_ids(self, value):
+        self.idMembers = value
+
     @property
     def short_id(self):
         return self.idShort
+
+    @short_id.setter
+    def short_id(self, value):
+        self.idShort = value
 
     @property
     def list_id(self):
         return self.idList
 
+    @list_id.setter
+    def list_id(self, value):
+        self.idList = value
+
     @property
     def board_id(self):
         return self.idBoard
+
+    @board_id.setter
+    def board_id(self, value):
+        self.idBoard = value
 
     @property
     def description(self):
