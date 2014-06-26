@@ -515,7 +515,7 @@ class Card(object):
     """
 
     @property
-    def member_id(self):
+    def member_ids(self):
         return self.idMembers
 
     @property
